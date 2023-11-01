@@ -226,8 +226,8 @@ ifeq ($(UNAME),OS/2)
 #   GTKLIBS = -LC:/XFree86/lib -Zmtd -Zsysv-signals -Zbin-files -lgtk12 -lgdk12 -lgmodule -lglib12 -lXext -lX11 -lshm -lbsd -lsocket -lm
 endif
 
-
-
+all: $(OBJ) $(DEP) $(PGM) main.o rtp.o mp3rtp mp3rtp.o \
+         mp3x.o mp3x libmp3lame.a 
 
 # 10/99 added -D__NO_MATH_INLINES to fix a bug in *all* versions of
 # gcc 2.8+ as of 10/99.  
